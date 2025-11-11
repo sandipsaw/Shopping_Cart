@@ -72,16 +72,16 @@ const Cart = ({ cart, removeHandler, cartIncr, cartDecr }) => {
   })
 
   return (
-    <div className=' flex justify-center lg:gap-20  md:gap-5  w-100% h-screen'>
-      <div className='flex gap-5 flex-col lg:w-1/2 md:w-1/2 sm:w-1/1 px-5 md:px-5'>
+    <div className=' flex justify-center lg:gap-20  md:gap-5 mt-5 w-100% h-screen'>
+      <div className='flex gap-5 flex-col  lg:w-1/2 md:w-1/2 sm:w-1/1 px-5 md:px-5'>
         <div className='flex justify-between items-center'>
-          <div><h1 className='lg:text-5xl md:text-3xl text-2xl lg:font-medium text-white mt-4'>Shopping Cart</h1></div>
+          <div><h1 className='lg:text-5xl md:text-3xl text-2xl lg:font-medium text-white '>Shopping Cart</h1></div>
           <div onClick={() => setshow(!show)} className='lg:hidden md:hidden sm:block text-lg border  rounded-xl font-bold p-1 text-white'>{show ? <RiCloseLargeFill /> : <LiaAudible />}</div>
         </div>
-        {/* <h1 className='lg:text-4xl md:text-3xl sm:text-2xl'>Product Cart</h1> */}
         {added}
       </div>
-      <div className={show ? "lg:block md:block absolute top-20 w-1/1" : "md:block lg:block hidden"}>
+
+      <div className={show ? "lg:block md:blockm absolute top-25  w-1/1" : "md:block lg:block hidden"}>
         <RightSideCheckoutRail cart={cart} setshow={setshow} show={show} />
       </div>
     </div>

@@ -21,7 +21,7 @@ export default function RightSideCheckoutRail({cart ,setshow }) {
   const remaining = Math.max(0, target - (subtotal - discount));
 
   return (  //
-    <aside className=" pt-5 lg:w-90 lg:px-0  md:px-0 px-5 ">
+    <aside className=" pt-5 lg:w-90 lg:px-0 md:px-0 px-5 ">
       <div className=" bg-white lg:bg-[#AED6CF] lg:border-0 md:border-0 border rounded-xl relative lg:space-y-4">
         {/* Delivery/Pincode */}
         <div className="lg:bg-white rounded-xl lg:shadow  p-4">
