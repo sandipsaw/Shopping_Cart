@@ -37,31 +37,31 @@ const Create = ({Product,setProduct}) => {
                     <input
                     onChange={(e) => settitle(e.target.value)}
                     value={title} 
-                    className='border-blue-200 bg-white border-2 rounded p-2 text-black' 
+                    className='border-blue-600 bg-white border-2 rounded p-2 text-black' 
                     type='text' placeholder='title' ></input>
 
                     <textarea 
                     onChange={(e) => setdescription(e.target.value)}
                     value={description}
-                    className='border-blue-200 bg-white border-2 rounded p-2' rows="2" 
+                    className='border-blue-600 bg-white border-2 rounded p-2' rows="2" 
                     placeholder='enter description'></textarea>
 
                     <input 
                     onChange={(e) => setimage(e.target.value)}
                     value={image}
-                    className='border-blue-200 bg-white border-2 rounded p-2' 
+                    className='border-blue-600 bg-white border-2 rounded p-2' 
                     type='text' placeholder='Image url' ></input>
 
                     <input 
                     onChange={(e) => setprice(e.target.value)}
                     value={price}
-                    className='border-blue-200 bg-white border-2 rounded p-2' 
+                    className='border-blue-600 bg-white border-2 rounded p-2' 
                     type='number' placeholder='price : ' ></input>
 
                     <input 
                     onChange={(e) => setqty(e.target.value)}
                     value={qty}
-                    className='border-blue-200 bg-white border-2 rounded p-2' 
+                    className='border-blue-600 bg-white border-2 rounded p-2' 
                     type='number' placeholder='quantity : ' ></input>
 
                     <button className='w-full rounded p-1 font-semibold bg-blue-400 mt-4 mb-2 text-white'>Submit</button>
