@@ -161,7 +161,7 @@ const App = () => {
       <div className=' w-100% pt-16 bg-[#AED6CF]'>
         <Header cart={cart} />
         <Routes>
-          <Route path='/product' element={<Product Product={Products} setProduct={setProducts} CartHandler={CartHandler} />} />
+          <Route path='/' element={<Product Product={Products} setProduct={setProducts} CartHandler={CartHandler} />} />
           <Route path='/cart' element={<Cart cart={cart} removeHandler={removeHandler} cartIncr={cartIncr} cartDecr={cartDecr} />} />
           <Route path='/create-product' element={<Create Product={Products} setProduct={setProducts} />} />
         </Routes>

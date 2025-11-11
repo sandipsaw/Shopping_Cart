@@ -22,7 +22,7 @@ const Cart = ({ cart, removeHandler, cartIncr, cartDecr }) => {
             Looks like you haven’t added anything yet.
           </p>
           <button
-            onClick={() => window.location.href = '/product'}
+            onClick={() => window.location.href = '/'}
             className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg"
           >
             Continue Shopping

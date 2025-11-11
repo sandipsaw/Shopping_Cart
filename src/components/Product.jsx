@@ -13,7 +13,9 @@ const Product = ({ Product , CartHandler}) => {
 
                     <div className='p-2'>
                         <h1 className='font-semibold text-2xl mt-2'>{product.title}</h1>
-                    <p className='text-lg tracking-tight'>{product.description.slice(0,48)}<span className='text-blue-900'>...more</span></p>
+                    <p className='text-lg lg:block hidden tracking-tight'>{product.description.slice(0,48)}<span className='text-blue-900'>...more</span></p>
+
+                    <p className='text-lg tracking-tight lg:hidden block'>{product.description}</p>
                     <button 
                     onClick={()=>CartHandler(product.id)} 
                     // ()=>CartHandler(product.id)
